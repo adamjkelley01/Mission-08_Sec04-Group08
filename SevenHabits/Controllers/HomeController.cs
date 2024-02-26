@@ -18,7 +18,7 @@ namespace SevenHabits.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Add()
         {
             return View();
         }
