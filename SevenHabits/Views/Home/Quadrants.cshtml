@@ -10,42 +10,40 @@
             <div class="col">
                 <div class="quadrant">
                     <h2>Quadrant 1</h2>
+                    <p>Urgent & Important</p>
                     <table class="task-table">
-                        <tr>
-                            <td>Task 1</td>
-                            <td>
-                                <button class="edit-btn">Edit</button>
-                                <button class="delete-btn">Delete</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Task 2</td>
-                            <td>
-                                <button class="edit-btn">Edit</button>
-                                <button class="delete-btn">Delete</button>
-                            </td>
-                        </tr>
+                        @foreach(Task t in ViewBag.Q1)
+                        {
+                            <tr>
+                                <td>@t.Title</td>
+                                <td>
+                                    <a class="edit-btn" asp-controller="Home" asp-action="Edit" asp-route-id="@t.TaskId">Edit</a>
+                                </td>
+                                <td>
+                                    <a class="delete-btn" asp-controller="Home" asp-action="Delete" asp-route-id="@t.TaskId">Delete</a>
+                                </td>
+                            </tr>
+                        }
                     </table>
                 </div>
             </div>
             <div class="col">
                 <div class="quadrant">
                     <h2>Quadrant 2</h2>
+                    <p>Not Urgent & Important</p>
                     <table class="task-table">
-                        <tr>
-                            <td>Task 3</td>
-                            <td>
-                                <button class="edit-btn">Edit</button>
-                                <button class="delete-btn">Delete</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Task 4</td>
-                            <td>
-                                <button class="edit-btn">Edit</button>
-                                <button class="delete-btn">Delete</button>
-                            </td>
-                        </tr>
+                        @foreach (Task t in ViewBag.Q2)
+                        {
+                            <tr>
+                                <td>@t.Title</td>
+                                <td>
+                                    <a class="edit-btn" asp-controller="Home" asp-action="Edit" asp-route-id="@t.TaskId">Edit</a>
+                                </td>
+                                <td>
+                                    <a class="delete-btn" asp-controller="Home" asp-action="Delete" asp-route-id="@t.TaskId">Delete</a>
+                                </td>
+                            </tr>
+                        }
                     </table>
                 </div>
             </div>
@@ -54,42 +52,40 @@
             <div class="col">
                 <div class="quadrant">
                     <h2>Quadrant 3</h2>
+                    <p>Urgent & Not Important</p>
                     <table class="task-table">
-                        <tr>
-                            <td>Task 5</td>
-                            <td>
-                                <button class="edit-btn">Edit</button>
-                                <button class="delete-btn">Delete</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Task 6</td>
-                            <td>
-                                <button class="edit-btn">Edit</button>
-                                <button class="delete-btn">Delete</button>
-                            </td>
-                        </tr>
+                        @foreach (Task t in ViewBag.Q3)
+                        {
+                            <tr>
+                                <td>@t.Title</td>
+                                <td>
+                                    <a class="edit-btn" asp-controller="Home" asp-action="Edit" asp-route-id="@t.TaskId">Edit</a>
+                                </td>
+                                <td>
+                                    <a class="delete-btn" asp-controller="Home" asp-action="Delete" asp-route-id="@t.TaskId">Delete</a>
+                                </td>
+                            </tr>
+                        }
                     </table>
                 </div>
             </div>
             <div class="col">
                 <div class="quadrant">
                     <h2>Quadrant 4</h2>
+                    <p>Not Urgent & Not Important</p>
                     <table class="task-table">
-                        <tr>
-                            <td>Task 7</td>
-                            <td>
-                                <button class="edit-btn">Edit</button>
-                                <button class="delete-btn">Delete</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Task 8</td>
-                            <td>
-                                <button class="edit-btn">Edit</button>
-                                <button class="delete-btn">Delete</button>
-                            </td>
-                        </tr>
+                        @foreach (Task t in ViewBag.Q4)
+                        {
+                            <tr>
+                                <td>@t.Title</td>
+                                <td>
+                                    <a class="edit-btn" asp-controller="Home" asp-action="Edit" asp-route-id="@t.TaskId">Edit</a>
+                                </td>
+                                <td>
+                                    <a class="delete-btn" asp-controller="Home" asp-action="Delete" asp-route-id="@t.TaskId">Delete</a>
+                                </td>
+                            </tr>
+                        }
                     </table>
                 </div>
             </div>
