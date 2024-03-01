@@ -81,7 +81,7 @@ form label {
     }
 
 .edit-btn,
-.delete-btn {
+.delete-btn, .complete-btn {
     padding: 5px 10px;
     margin-right: 5px;
     border: none;
@@ -96,5 +96,10 @@ form label {
 
 .delete-btn {
     background-color: #dc3545;
+    color: #fff;
+}
+
+.complete-btn {
+    background-color: #00ab66;
     color: #fff;
 }
